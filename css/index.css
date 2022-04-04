@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-login__title {
+
+    text-align: center;
+    color: #ff5454;
+    padding-top: 20px;
+}
+
+.formulario {
+
+    text-align: center;
+    margin: auto;
+    width: 15em;
+}
+
+.formulario label,
+.formulario input {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.formulario input[type="password"] {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0.2rem 0.5rem;
+
+}
+
+.formulario input[type="texto"]:focus {
+    background: #d8f3df;
+    border-color: #2ddf5c;
+}
+
+.formulario input[type="password"]:focus {
+    background: #d8f3df;
+    border-color: #2ddf5c;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input:invalid:focus {
+
+    border: 1px solid red;
+    background: rgb(250, 172, 172);
+
+}
+
+.formulario button[type="submit"] {
+    background: #0e4f1f;
+    color: white;
+    border: 1.5px solid #0e4f1f;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.formulario button[type="submit"]:hover,
+.formulario button[type="submit"]:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.main-header{
+    position: fixed;
+    top: 0;
+
+}
