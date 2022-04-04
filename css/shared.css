@@ -5,95 +5,82 @@
 }
 
 body {
-
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.main-header {
+.main-main{
+    padding-top: 60px;
+}
 
+.main-header {
     background-color: #2ddf5c;
     padding: 8px 16px;
     width: 100%;
+    position:fixed;
+    top: 0
 }
 
-.main-header>div,
-.main-nav__item,
-.main-nav {
-
-    display: inline-block;
+.main-navitem {
+    display: inline;
+    margin: 0 16px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #0e4f1f;
 }
 
-.main-nav {
-
-    width: calc(100% - 150px);
-    text-align: right;
-
+.main-navitem a {
+    text-decoration: none;
 }
 
-.main-nav__items {
+.main-navitems {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-.main-header__brand {
-
-    color: #0e4f1f;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    font-size: 22px
-}
-
+.main-header>div,
 .main-nav,
-.main-header>div {
+.main-navitem {
+    display: inline-block;
+}
 
+.main-nav {
+    width: calc(100% - 76px);
+    text-align: right;
     vertical-align: middle;
-
 }
 
-.main-nav__item a {
-
-    text-decoration: none;
-    color: #0e4f1f
-}
-
-.main-nav__item {
-
+.main-headerbrand {
     color: #0e4f1f;
-    margin: 016px;
+    text-decoration: none;
     font-weight: bold;
-    font-size: 12px;
-
+    font-size: 22px;
 }
 
-.main-nav__item a:hover,
-.main-nav__item a:active {
+.main-header>div {
+    vertical-align: middle;
+}
 
+.main-navitem a:hover,
+.main-navitem a:active {
     color: white;
     font-weight: bold;
-    border-bottom: 5px solid white
+    border-bottom: 5px solid white;
 }
 
-.nav__item_mensajes::before {
-
+.main-navitem_mensajes::before {
     content: "✉";
-
 }
 
-.main-nav__item_logout a {
-
+.main-navitem_logout a {
     color: white;
     background: #ff1b68;
     padding: 8px 16px;
     border-radius: 8px;
 }
 
-.main-nav__item_logout a:hover {
-
+.main-navitem_logout a:hover {
     color: #ff1b68;
     background-color: white;
     border-bottom: none;

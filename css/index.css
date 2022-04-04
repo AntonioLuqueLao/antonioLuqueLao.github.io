@@ -5,60 +5,49 @@
 }
 
 body {
-
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.main-login__title {
 
+.main-login__title {
     text-align: center;
     color: #ff5454;
     padding-top: 20px;
 }
 
-.formulario {
-
-    text-align: center;
+.login-form {
     margin: auto;
     width: 15em;
 }
 
-.formulario label,
-.formulario input {
+.login-form label,
+.login-form input {
     display: block;
     margin-top: 25px;
     width: 100%;
 }
 
-.formulario input[type="password"] {
-    border: 1px solid rgb(204, 204, 204);
+.login-form input[type="text"] {
+    border: 1px solid #ccc;
     padding: 0.2rem 0.5rem;
-
 }
 
-.formulario input[type="texto"]:focus {
+.login-form input[type="text"]:focus {
     background: #d8f3df;
     border-color: #2ddf5c;
 }
 
-.formulario input[type="password"]:focus {
-    background: #d8f3df;
-    border-color: #2ddf5c;
-}
-
-.formulario label {
+.login-form label {
     font-weight: bold;
 }
 
-.formulario input:invalid:focus {
-
+.login-form input:invalid:focus {
     border: 1px solid red;
     background: rgb(250, 172, 172);
-
 }
 
-.formulario button[type="submit"] {
+.login-form input[type="submit"] {
     background: #0e4f1f;
     color: white;
     border: 1.5px solid #0e4f1f;
@@ -70,14 +59,8 @@ body {
     font-family: inherit;
 }
 
-.formulario button[type="submit"]:hover,
-.formulario button[type="submit"]:active {
+.login-form input[type="submit"]:hover,
+.login-form input[type="submit"]:active {
     background: white;
     color: #0e4f1f;
-}
-
-.main-header{
-    position: fixed;
-    top: 0;
-
 }

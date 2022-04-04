@@ -8,40 +8,41 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
         integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/index.css">
+
     <title>Document</title>
 </head>
 
 <body>
+    <!-- NAV -->
     <header class="main-header">
-        <div class="clase main-header__brand">
-            BANCO BAN
+        <div>
+            <a class="main-headerbrand" href="#">Banco</a>
         </div>
         <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="#">Clientes</a></li>
-                <li class="main-nav__item"><a href="#">Gestores</a></li>
-                <li class="main-nav__item"><a class="nav__item_mensajes" href="#">Mensajes</a></li>
-                <li class="main-nav__item main-nav__item_logout"><a href="#"><i class="fas fa-sign-out-alt"></i>Log
-                        out</a>
-                </li>
+            <ul class="main-navitems">
+                <li class="main-navitem"><a href="#">Clientes</a></li>
+                <li class="main-navitem"><a href="#">Gestores</a></li>
+                <li class="main-navitem"><a class="main-navitem_mensajes" href="#">Mensajes</a></li>
+                <li class="main-navitem 
+                main-navitem_logout"><a href="#"><i class="fas fa-sign-out-alt"></i>
+                        Logout</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Formulario -->
+    <main class="main-main">
+        <h1 class="main-login__title">Iniciar Sesión</h1>
+        <form class="login-form">
+            <label for="nombre">Nombre de usuario:</label>
+            <input placeholder="Username" type="text" id="nombre" name="nombre" required="required">
 
-    <main>
-        <h1 class="main-login__title">
-            Iniciar sesión
-        </h1>
-        <form class="formulario">
-            <label for="usuario">USUARIO</label>
-            <input placeholder="Nombre de usuario" type="texto" name="usuario">
-
-            <label for="psw">CONTRASEÑA</label>
-            <input placeholder="Contraseña" type="password" name="psw">
-            <br>
-            <button type="submit">Enviar</button>
+            <label for="psw">Password:</label>
+            <input type="password" placeholder="Password" id="psw" name="psw" required="required">
+            <input type="submit" value="Enviar">
         </form>
-            </main>
-        </body>
-        </html>
+    </main>
+</body>
+
+</html>

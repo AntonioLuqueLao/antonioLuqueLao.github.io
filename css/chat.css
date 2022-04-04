@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-aside {
+    position: fixed;
+    border: #0e4f1f solid 2px;
+    width: 15em;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+}
+
+.main-asidetitle {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0e4f1f;
+    color: white;
+    font-weight: bold;
+}
+
+.main-asidemensajes {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.main-aside__submit {
+    bottom: 1%;
+    left: 2%;
+}
